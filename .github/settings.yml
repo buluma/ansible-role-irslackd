@@ -1,0 +1,8 @@
+---
+#
+# Ansible managed
+#
+repository:
+  description: Install and configure irslackd on your system.
+  homepage: https://buluma.github.io/
+  topics: irslackd, ansible, molecule, tox, playbook, hacktoberfest
