@@ -1,4 +1,4 @@
-# [irslackd](#irslackd)
+# [Ansible role irslackd](#irslackd)
 
 Install and configure irslackd on your system.
 
