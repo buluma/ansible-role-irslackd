@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.2.0](https://github.com/buluma/ansible-role-irslackd/tree/0.2.0) (2024-01-02)
+
+[Full Changelog](https://github.com/buluma/ansible-role-irslackd/compare/0.1.2...0.2.0)
+
 ## [0.1.2](https://github.com/buluma/ansible-role-irslackd/tree/0.1.2) (2023-12-25)
 
 [Full Changelog](https://github.com/buluma/ansible-role-irslackd/compare/0.1.1...0.1.2)
