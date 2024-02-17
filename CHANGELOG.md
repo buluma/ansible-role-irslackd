@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-irslackd/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-irslackd/compare/0.3.0...HEAD)
+
+**Merged pull requests:**
+
+- Bump release-drafter/release-drafter from 5 to 6 [\#12](https://github.com/buluma/ansible-role-irslackd/pull/12) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [0.3.0](https://github.com/buluma/ansible-role-irslackd/tree/0.3.0) (2024-01-20)
 
 [Full Changelog](https://github.com/buluma/ansible-role-irslackd/compare/0.2.0...0.3.0)
