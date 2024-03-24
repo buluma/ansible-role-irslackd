@@ -100,10 +100,10 @@ This role has been tested on these [container images](https://hub.docker.com/u/b
 
 |container|tags|
 |---------|----|
-|[EL](https://hub.docker.com/repository/docker/buluma/enterpriselinux/general)|8|
-|[Debian](https://hub.docker.com/repository/docker/buluma/debian/general)|bullseye|
-|[Fedora](https://hub.docker.com/repository/docker/buluma/fedora/general)|all|
-|[Ubuntu](https://hub.docker.com/repository/docker/buluma/ubuntu/general)|focal|
+|[EL](https://hub.docker.com/r/buluma/enterpriselinux)|8|
+|[Debian](https://hub.docker.com/r/buluma/debian)|bullseye|
+|[Fedora](https://hub.docker.com/r/buluma/fedora)|all|
+|[Ubuntu](https://hub.docker.com/r/buluma/ubuntu)|focal|
 
 The minimum version of Ansible required is 2.12, tests have been done to:
 
