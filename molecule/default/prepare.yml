@@ -7,6 +7,3 @@
   roles:
     - role: buluma.bootstrap
     - role: buluma.epel
-    - role: buluma.git
-    - role: buluma.ca_certificates
-    - role: buluma.npm

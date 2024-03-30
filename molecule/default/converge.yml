@@ -9,4 +9,7 @@
       when: ansible_os_family == 'Debian'
 
   roles:
+    - role: buluma.git
+    - role: buluma.ca_certificates
+    - role: buluma.npm
     - role: ansible-role-irslackd
