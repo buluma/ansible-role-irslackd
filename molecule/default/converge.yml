@@ -12,4 +12,4 @@
     - role: buluma.git
     - role: buluma.ca_certificates
     - role: buluma.npm
-    - role: ansible-role-irslackd
+    - role: buluma.irslackd
