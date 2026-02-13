@@ -1,0 +1,19 @@
+digraph PhiloDilemma {
+  label = "Michael Buluma" ;
+  overlap=false
+  {
+    "irslackd" [fillcolor=yellow style=filled penwidth=3]
+    "buluma.bootstrap" [fillcolor=green style=filled]
+    "buluma.ca_certificates" [fillcolor=green style=filled]
+    "buluma.epel" [fillcolor=green style=filled]
+    "buluma.git" [fillcolor=green style=filled]
+    "buluma.npm" [fillcolor=green style=filled]
+    "buluma.service" [fillcolor=green style=filled]
+  }
+  "irslackd" -> "buluma.bootstrap"
+  "irslackd" -> "buluma.ca_certificates"
+  "irslackd" -> "buluma.epel"
+  "irslackd" -> "buluma.git"
+  "irslackd" -> "buluma.npm"
+  "irslackd" -> "buluma.service"
+}
