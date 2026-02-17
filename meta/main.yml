@@ -1,3 +1,4 @@
+---
 galaxy_info:
   author: buluma
   role_name: irslackd
@@ -6,9 +7,9 @@ galaxy_info:
   company: none
   min_ansible_version: '2.12'
   platforms:
-  - name: EL
-    versions:
-    - all
+    - name: EL
+      versions:
+        - all
   - name: Debian
     versions:
     - all
@@ -19,5 +20,5 @@ galaxy_info:
     versions:
     - all
   galaxy_tags:
-  - irslackd
+    - irslackd
 dependencies: []
