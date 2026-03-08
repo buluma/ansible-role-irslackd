@@ -2,9 +2,9 @@
 
 Install and configure irslackd on your system.
 
-|GitHub|GitLab|Downloads|Version|
-|------|------|---------|-------|
-|[![github](https://github.com/buluma/ansible-role-irslackd/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-irslackd/actions)|[![gitlab](https://gitlab.com/shadowwalker/ansible-role-irslackd/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-irslackd)|[![downloads](https://img.shields.io/ansible/role/d/buluma/irslackd)](https://galaxy.ansible.com/buluma/irslackd)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-irslackd.svg)](https://github.com/buluma/ansible-role-irslackd/releases/)|
+|GitHub|Issues|Pull Requests|Version|Downloads|
+|------|------|-------------|-------|---------|
+|[![github](https://github.com/buluma/ansible-role-irslackd/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-irslackd/actions/workflows/molecule.yml)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-irslackd.svg)](https://github.com/buluma/ansible-role-irslackd/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-irslackd.svg)](https://github.com/buluma/ansible-role-irslackd/pulls/)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-irslackd.svg)](https://github.com/buluma/ansible-role-irslackd/releases/)|[![Ansible Role](https://img.shields.io/ansible/role/d/buluma/irslackd)](https://galaxy.ansible.com/ui/standalone/roles/buluma/irslackd/documentation)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -17,17 +17,17 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
   become: true
   gather_facts: true
   pre_tasks:
-  - name: Update apt cache.
-    ansible.builtin.apt:
-      update_cache: true
-      cache_valid_time: 600
-    when: ansible_os_family == 'Debian'
+    - name: Update apt cache.
+      ansible.builtin.apt:
+        update_cache: true
+        cache_valid_time: 600
+      when: ansible_os_family == 'Debian'
 
   roles:
-  - role: buluma.git
-  - role: buluma.ca_certificates
-  - role: buluma.npm
-  - role: buluma.irslackd
+    - role: buluma.git
+    - role: buluma.ca_certificates
+    - role: buluma.npm
+    - role: buluma.irslackd
 ```
 
 The machine needs to be prepared. In CI this is done using [`molecule/default/prepare.yml`](https://github.com/buluma/ansible-role-irslackd/blob/master/molecule/default/prepare.yml):
@@ -40,8 +40,8 @@ The machine needs to be prepared. In CI this is done using [`molecule/default/pr
   become: true
 
   roles:
-  - role: buluma.bootstrap
-  - role: buluma.epel
+    - role: buluma.bootstrap
+    - role: buluma.epel
 ```
 
 Also see a [full explanation and example](https://buluma.github.io/how-to-use-these-roles.html) on how to use these roles.
@@ -83,32 +83,33 @@ irslackd_common_name: "{{ ansible_fqdn }}"
 
 The following roles are used to prepare a system. You can prepare your system in another way.
 
-| Requirement | GitHub | GitLab |
-|-------------|--------|--------|
-|[buluma.bootstrap](https://galaxy.ansible.com/buluma/bootstrap)|[![Build Status GitHub](https://github.com/buluma/ansible-role-bootstrap/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-bootstrap/actions)|[![Build Status GitLab](https://gitlab.com/shadowwalker/ansible-role-bootstrap/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-bootstrap)|
-|[buluma.ca_certificates](https://galaxy.ansible.com/buluma/ca_certificates)|[![Build Status GitHub](https://github.com/buluma/ansible-role-ca_certificates/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-ca_certificates/actions)|[![Build Status GitLab](https://gitlab.com/shadowwalker/ansible-role-ca_certificates/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-ca_certificates)|
-|[buluma.epel](https://galaxy.ansible.com/buluma/epel)|[![Build Status GitHub](https://github.com/buluma/ansible-role-epel/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-epel/actions)|[![Build Status GitLab](https://gitlab.com/shadowwalker/ansible-role-epel/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-epel)|
-|[buluma.git](https://galaxy.ansible.com/buluma/git)|[![Build Status GitHub](https://github.com/buluma/ansible-role-git/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-git/actions)|[![Build Status GitLab](https://gitlab.com/shadowwalker/ansible-role-git/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-git)|
-|[buluma.npm](https://galaxy.ansible.com/buluma/npm)|[![Build Status GitHub](https://github.com/buluma/ansible-role-npm/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-npm/actions)|[![Build Status GitLab](https://gitlab.com/shadowwalker/ansible-role-npm/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-npm)|
-|[buluma.service](https://galaxy.ansible.com/buluma/service)|[![Build Status GitHub](https://github.com/buluma/ansible-role-service/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-service/actions)|[![Build Status GitLab](https://gitlab.com/shadowwalker/ansible-role-service/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-service)|
+| Requirement | GitHub |
+|-------------|--------|
+|[buluma.bootstrap](https://galaxy.ansible.com/buluma/bootstrap)|[![Build Status GitHub](https://github.com/buluma/ansible-role-bootstrap/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-bootstrap/actions)|
+|[buluma.ca_certificates](https://galaxy.ansible.com/buluma/ca_certificates)|[![Build Status GitHub](https://github.com/buluma/ansible-role-ca_certificates/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-ca_certificates/actions)|
+|[buluma.epel](https://galaxy.ansible.com/buluma/epel)|[![Build Status GitHub](https://github.com/buluma/ansible-role-epel/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-epel/actions)|
+|[buluma.git](https://galaxy.ansible.com/buluma/git)|[![Build Status GitHub](https://github.com/buluma/ansible-role-git/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-git/actions)|
+|[buluma.npm](https://galaxy.ansible.com/buluma/npm)|[![Build Status GitHub](https://github.com/buluma/ansible-role-npm/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-npm/actions)|
+|[buluma.service](https://galaxy.ansible.com/buluma/service)|[![Build Status GitHub](https://github.com/buluma/ansible-role-service/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-service/actions)|
 
 ## [Context](#context)
 
 This role is part of many compatible roles. Have a look at [the documentation of these roles](https://buluma.github.io/) for further information.
 
 Here is an overview of related roles:
+
 ![dependencies](https://raw.githubusercontent.com/buluma/ansible-role-irslackd/png/requirements.png "Dependencies")
 
 ## [Compatibility](#compatibility)
 
-This role has been tested on these [container images](https://hub.docker.com/u/buluma):
+This role has been tested on these [container images](https://hub.docker.com/u/robertdebock):
 
 |container|tags|
 |---------|----|
-|[EL](https://hub.docker.com/r/buluma/enterpriselinux)|all|
-|[Debian](https://hub.docker.com/r/buluma/debian)|all|
-|[Fedora](https://hub.docker.com/r/buluma/fedora)|all|
-|[Ubuntu](https://hub.docker.com/r/buluma/ubuntu)|all|
+|[EL](https://hub.docker.com/r/robertdebock/enterpriselinux)|all|
+|[Debian](https://hub.docker.com/r/robertdebock/debian)|all|
+|[Fedora](https://hub.docker.com/r/robertdebock/fedora)|all|
+|[Ubuntu](https://hub.docker.com/r/robertdebock/ubuntu)|all|
 
 The minimum version of Ansible required is 2.12, tests have been done on:
 
@@ -125,3 +126,4 @@ If you find issues, please register them on [GitHub](https://github.com/buluma/a
 ## [Author Information](#author-information)
 
 [buluma](https://buluma.github.io/)
+
