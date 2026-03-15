@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-irslackd/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-irslackd/compare/24.3.31...HEAD)
+
+**Merged pull requests:**
+
+- Bump docker/setup-buildx-action from 3 to 4 [\#22](https://github.com/buluma/ansible-role-irslackd/pull/22) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [24.3.31](https://github.com/buluma/ansible-role-irslackd/tree/24.3.31) (2024-03-30)
 
 [Full Changelog](https://github.com/buluma/ansible-role-irslackd/compare/0.3.0...24.3.31)
