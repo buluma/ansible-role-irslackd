@@ -6,5 +6,5 @@ roles:
   - name: buluma.git
   - name: buluma.npm
   - name: buluma.service
-collections:
+collections: []
   - name: community.general
