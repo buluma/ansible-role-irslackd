@@ -19,4 +19,4 @@ irslackd_state: Nairobi
 irslackd_location: Nairobi
 irslackd_organization: Very little
 irslackd_organizational_unit: IT Department
-irslackd_common_name: "{{ ansible_facts.fqdn }}"
+irslackd_common_name: "{{ ansible_fqdn }}"
