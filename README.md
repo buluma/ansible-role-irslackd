@@ -104,8 +104,6 @@ irslackd_organizational_unit: IT Department
 irslackd_common_name: "{{ ansible_facts['fqdn'] | default(ansible_facts['hostname']) | default('localhost') }}"
 ```
 
-The default pin applies to fresh installations. Existing checkouts are not updated automatically because the Git task uses `update: false`; plan and test any manual upgrade before changing an existing installation. This revision updates Slack API dependencies and message handling.
-
 ## [Requirements](#requirements)
 
 - pip packages listed in [requirements.txt](https://github.com/buluma/ansible-role-irslackd/blob/master/requirements.txt).
